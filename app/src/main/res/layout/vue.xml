@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginLeft="40dp"
+    android:layout_marginTop="@dimen/margin_tv"
+    android:layout_marginRight="10dp">
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:orientation="horizontal">
+
+        <!-- Première ligne-->
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/bt2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+
+            />
+
+        <Button
+            android:id="@+id/bt3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
+        android:background="@drawable/border"
+        android:orientation="horizontal"
+
+
+        >
+
+        <!-- Deuxième ligne-->
+
+        <Button
+            android:id="@+id/bt4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/border" />
+
+        <Button
+            android:id="@+id/bt5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/border" />
+
+        <Button
+            android:id="@+id/bt6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/line3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2"
+        android:background="@drawable/border"
+        android:orientation="horizontal">
+
+
+        <!-- Troisième ligne-->
+
+        <Button
+            android:id="@+id/bt7"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <Button
+            android:id="@+id/bt8"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+
+            />
+
+        <Button
+            android:id="@+id/bt9"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <!-- Textview-->
+
+    <TextView
+        android:id="@+id/auTourDe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line3"
+        android:layout_marginTop="@dimen/margin_tv"
+        android:text="Au tour du joueur : "
+
+        />
+
+    <TextView
+        android:id="@+id/joueur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line3"
+        android:layout_marginTop="@dimen/margin_tv"
+        android:layout_toRightOf="@id/auTourDe"
+        android:text="X" />
+
+    <LinearLayout
+        android:id="@+id/line5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/joueur"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewNomO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/joueur"
+            android:text="NomO :"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/NomO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewNomO"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/textViewNomX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewNomO"
+            android:text="NomX  :"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/NomX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewNomX"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text=" TOP 10 : ">
+
+        <TextView
+            android:id="@+id/scoresView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/NomX"
+
+            />
+
+    </ListView>
+
+</RelativeLayout>
