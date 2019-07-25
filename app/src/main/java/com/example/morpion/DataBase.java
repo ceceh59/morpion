@@ -70,7 +70,7 @@ public class DataBase extends SQLiteOpenHelper {
 
 // pour recuperer en base et modifier
 
-    public void update(Context context, String itemId, String dishName, String dishPrice, String dishQty) {
+   /* public void update(Context context, String itemId, String dishName, String dishPrice, String dishQty) {
 
         SQLiteDatabase db = new SQLiteDatabase(context);
         SQLiteDatabase db = SQLiteDatabase.();
@@ -94,12 +94,12 @@ public class DataBase extends SQLiteOpenHelper {
 
             return false;
         }
-    }
+    }*/
 
 
     }
 
 
-  }
+
 
 
